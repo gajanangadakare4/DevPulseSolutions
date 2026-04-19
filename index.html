@@ -1,0 +1,185 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPulse Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>DevPulse Solutions</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>We Help Businesses Grow Online</h2>
+        <p>Websites + Marketing that bring real customers.</p>
+        <a href="contact.html"><button class="btn">Get Started</button></a>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Website Development</h3>
+                <p>Modern websites designed to convert visitors into customers.</p>
+            </div>
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Improve your Google ranking and get organic traffic.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Grow your brand and attract customers on social platforms.</p>
+            </div>
+            <div class="card">
+                <h3>Ads</h3>
+                <p>Run targeted ads that generate leads and sales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Choose Us</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Result Driven</h3>
+                <p>We focus on real business growth, not just design.</p>
+            </div>
+            <div class="card">
+                <h3>Affordable Pricing</h3>
+                <p>High-quality services at budget-friendly rates.</p>
+            </div>
+            <div class="card">
+                <h3>Fast Delivery</h3>
+                <p>Quick turnaround without compromising quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Get Started Today</h2>
+        <p style="text-align:center; color:#94a3b8;">Contact us today and take your business online.</p>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="contact.html"><button class="btn">Contact Us</button></a>
+        </div>
+    </section>
+
+    <footer>© 2026 DevPulse Solutions</footer>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPulse Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body>
+
+  <header>
+    <h1>DevPulse Solutions</h1>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropdown">
+            <a href="service.html" class="dropbtn" onclick="toggleDropdown(event)">Services</a>
+
+         
+        </div>
+
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+    <section class="hero">
+        <h2>We Help Businesses Grow Online</h2>
+        <p>Websites + Marketing that bring real customers.</p>
+        <a href="contact.html"><button class="btn">Get Started</button></a>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Website Development</h3>
+                <p>Modern websites designed to convert visitors into customers.</p>
+            </div>
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Improve your Google ranking and get organic traffic.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Grow your brand and attract customers on social platforms.</p>
+            </div>
+            <div class="card">
+                <h3>Ads</h3>
+                <p>Run targeted ads that generate leads and sales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Choose Us</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Result Driven</h3>
+                <p>We focus on real business growth, not just design.</p>
+            </div>
+            <div class="card">
+                <h3>Affordable Pricing</h3>
+                <p>High-quality services at budget-friendly rates.</p>
+            </div>
+            <div class="card">
+                <h3>Fast Delivery</h3>
+                <p>Quick turnaround without compromising quality.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section>
+        <h2>Get Started Today</h2>
+        <p style="text-align:center; color:#94a3b8;">Contact us today and take your business online.</p>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="contact.html"><button class="btn">Contact Us</button></a>
+        </div>
+    </section>
+
+    <footer>© 2026 DevPulse Solutions</footer>
+
+    <!-- <script src="script.js"></script> -->
+
+<script>
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+}
+</script>
+
+</body>
+
+</html>

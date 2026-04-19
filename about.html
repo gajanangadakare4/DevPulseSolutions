@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | DevPulse Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header>
+    <h1>DevPulse Solutions</h1>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropdown">
+            <a href="service.html" class="dropbtn" onclick="toggleDropdown(event)">Services</a>
+
+         
+        </div>
+
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>About DevPulse Solutions</h2>
+    <p>Building websites and marketing strategies that drive real business growth.</p>
+</section>
+
+<section>
+    <div class="about-container">
+
+        <!-- LEFT SIDE IMAGE -->
+        <div class="about-img">
+            <img src="profile2.png" alt="gajnan_gadakare_profile_image">
+        </div>
+
+        <!-- RIGHT SIDE TEXT -->
+        <div class="about-text">
+            <h2>Who We Are</h2>
+
+            <p>
+                At <span class="highlight">DevPulse Solutions</span>, we help businesses build a strong online presence 
+                through modern websites and effective digital marketing strategies.
+            </p>
+
+            <br>
+
+            <p>
+                I’m a passionate developer and digital marketer focused on creating websites that are not just visually 
+                appealing but also designed to convert visitors into customers.
+            </p>
+
+            <br>
+
+            <p>
+                From website development to SEO and marketing campaigns, our goal is simple —
+                <span class="highlight">help businesses grow, generate leads, and succeed online.</span>
+            </p>
+
+            <br>
+
+            <p>
+                We believe in delivering value, building long-term relationships, and helping clients achieve measurable results.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Our Mission</h2>
+    <p style="text-align:center; color:#94a3b8; max-width:700px; margin:auto;">
+        Our mission is to empower businesses with digital solutions that drive growth, increase visibility,
+        and create lasting impact in the online world.
+    </p>
+</section>
+
+<section>
+    <h2>Why Choose Us</h2>
+    <div class="services">
+
+        <div class="card">
+            <h3>Client-Focused Approach</h3>
+            <p>We understand your business goals and build solutions accordingly.</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern Technology</h3>
+            <p>We use the latest tools and trends to deliver high-quality results.</p>
+        </div>
+
+        <div class="card">
+            <h3>Growth Driven</h3>
+            <p>Our focus is not just design, but real business growth and ROI.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 DevPulse Solutions
+</footer>
+
+ <script>
+function toggleMenu() {
+    const nav = document.getElementById("navbar");
+    nav.classList.toggle("active");
+}
+
+function toggleDropdown(e) {
+    if (window.innerWidth <= 768) {
+        e.preventDefault();
+        const dropdown = e.target.closest(".dropdown");
+        dropdown.classList.toggle("active");
+    }
+}
+</script>
+
+</body>
+
+</html>
