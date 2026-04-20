@@ -25,6 +25,10 @@ header {
     z-index: 1000;
 }
 
+header h1 {
+    font-size: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -207,66 +211,145 @@ h3 {
     color: #94a3b8;
 }
 
-/* ================= FOOTER ================= */
-
-footer {
-    text-align: center;
-    padding: 15px;
+/* FOOTER */
+.footer {
     background: #020617;
+    padding: 40px 20px;
+    color: #94a3b8;
+}
+
+/* GRID */
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* COLUMN */
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-col h3 {
+    color: #e2e8f0;
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.footer-col a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.footer-col a:hover {
+    color: #38bdf8;
+}
+
+/* MAP */
+.map-container {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* SOCIAL */
+.footer-social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #38bdf8;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
     font-size: 14px;
 }
 
-/* ================= MOBILE ================= */
+.footer-col h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 26px;
+}
 
+
+
+/* MOBILE */
 @media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 230px;
-        background: #020617;
-        flex-direction: column;
-        padding: 70px 20px;
-        transition: 0.3s;
-    }
-
-    nav.active {
-        right: 0;
-    }
-
-    nav a {
-        padding: 10px 0;
-        width: 100%;
-    }
-
-    .dropdown:hover .dropdown-menu {
-        display: none;
-    }
-
-    .dropdown.active .dropdown-menu {
-        display: block;
-        position: static;
-        border: none;
-    }
-
-    .about-container {
+    .footer-container {
         flex-direction: column;
         text-align: center;
     }
+}
+/* ================= SMALL MOBILE (≤480px) ================= */
+@media (max-width: 480px) {
 
-    .hero h2 {
-        font-size: 1.6rem;
+    header h1 {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero-left h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-left p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+}
+
+/* ================= TABLET (481px – 768px) ================= */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .hero-left h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-form {
+        max-width: 100%;
     }
 
     .services {
-        flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
 
     .card {
@@ -275,9 +358,43 @@ footer {
     }
 }
 
-/* ================= TEXT ================= */
+/* ================= SMALL LAPTOP (769px – 1024px) ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
 
-p {
-    font-size: 15px;
-    color: #94a3b8;
+    .hero-container {
+        gap: 40px;
+    }
+
+    .hero-left h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-form {
+        max-width: 350px;
+    }
+
+    .card {
+        width: 260px;
+    }
+}
+
+/* ================= LARGE SCREENS (≥1200px) ================= */
+@media (min-width: 1200px) {
+
+    .hero-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .hero-left h2 {
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 300px;
+    }
 }
