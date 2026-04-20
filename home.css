@@ -25,6 +25,8 @@ header {
     z-index: 1000;
 }
 
+/* ================= NAVBAR ================= */
+
 nav {
     display: flex;
     align-items: center;
@@ -83,8 +85,6 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* ================= HERO ================= */
-
 .hero {
     width: 100%;
     min-height: 55vh;
@@ -95,76 +95,16 @@ nav a:hover {
     align-items: center;
 
     text-align: center;
-    padding: 60px 15px;
+    padding: 40px 15px;
 
-    background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)),
-        url('../image/bg-img.png');
+    /* BACKGROUND IMAGE */
+    background: 
+        linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), 
+        url('./bg-img.png');
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.hero h2 {
-    font-size: 2rem;
-}
-
-.hero p {
-    color: #94a3b8;
-}
-
-/* ================= SECTIONS ================= */
-
-section {
-    width: 100%;
-    padding: 50px 15px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
- 
-
-/* ================= ABOUT LAYOUT ================= */
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.about-img img {
-    width: 280px;
-    max-width: 100%;
-    border-radius: 12px;
-}
-
-.about-text {
-    max-width: 520px;
-}
-
-.about-text h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-}
-
-.about-text p {
-    font-size: 15px;
-    color: #94a3b8;
-    line-height: 1.6;
 }
 
 /* ================= BUTTON ================= */
@@ -179,7 +119,41 @@ h3 {
     border: none;
 }
 
-/* ================= SERVICES / CARDS ================= */
+/* ================= SECTIONS ================= */
+
+section {
+    width: 100%;
+    padding: 50px 15px; /* FULL WIDTH no gaps */
+}
+
+/* ================= HEADINGS ================= */
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+/* ================= SERVICES ================= */
 
 .services {
     display: flex;
@@ -194,12 +168,10 @@ h3 {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid #334155;
 }
 
 .card h3 {
     margin-bottom: 10px;
-    color: #e2e8f0;
 }
 
 .card p {
@@ -245,6 +217,7 @@ footer {
         width: 100%;
     }
 
+    /* Disable hover dropdown */
     .dropdown:hover .dropdown-menu {
         display: none;
     }
@@ -255,13 +228,20 @@ footer {
         border: none;
     }
 
-    .about-container {
-        flex-direction: column;
-        text-align: center;
+    /* HERO FIX */
+    .hero {
+        min-height: auto;
+        padding: 60px 15px;
     }
 
     .hero h2 {
         font-size: 1.6rem;
+    }
+
+    /* STACK */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
     }
 
     .services {
@@ -275,9 +255,21 @@ footer {
     }
 }
 
-/* ================= TEXT ================= */
+/* ================= TABLET ================= */
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* TEXT */
 p {
     font-size: 15px;
     color: #94a3b8;
 }
+
+p a {
+    color: #94a3b8;;
+}
+
