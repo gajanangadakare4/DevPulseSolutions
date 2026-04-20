@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>About Us | DevPulse Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/about.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 
         <!-- LEFT SIDE IMAGE -->
         <div class="about-img">
-            <img src="profile2.png" alt="gajnan_gadakare_profile_image">
+            <img src="../image/profile2.png" alt="gajanan_gadakare_profile_image">
         </div>
 
         <!-- RIGHT SIDE TEXT -->
@@ -110,17 +110,15 @@
     © 2026 DevPulse Solutions
 </footer>
 
- <script>
+<script>
 function toggleMenu() {
-    const nav = document.getElementById("navbar");
-    nav.classList.toggle("active");
+    document.getElementById("navbar").classList.toggle("active");
 }
 
 function toggleDropdown(e) {
     if (window.innerWidth <= 768) {
         e.preventDefault();
-        const dropdown = e.target.closest(".dropdown");
-        dropdown.classList.toggle("active");
+        e.target.parentElement.classList.toggle("active");
     }
 }
 </script>
